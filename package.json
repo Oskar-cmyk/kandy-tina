@@ -1,0 +1,21 @@
+{
+  "name": "my-eleventy-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tinacms/cli": "^1.6.11",
+    "@types/node": "^22.8.6"
+  },
+  "dependencies": {
+    "tinacms": "^2.4.0"
+  }
+}

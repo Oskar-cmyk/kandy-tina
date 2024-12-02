@@ -1,0 +1,19 @@
+---
+layout: default.njk
+---
+
+<p>
+    <a href="../"> &laquo; Back to posts</a>
+</p>
+<article>
+    <h2>{{ title }}</h2>
+    {{ content | safe }}
+    <div class="tags--container">
+        {% for tag in tags %}
+        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <div class="tag">
+                <a href="{{ tagUrl | url }}">{{ tag }}</a>
+            </div>
+            {% endfor %}
+    </div>
+</article>

@@ -1,0 +1,24 @@
+<div class="flex-container">
+    <div class="flex-item">
+        <img src="{{ main_image }}" style="width:100%">
+
+        <div>
+            <h3>{{ title }}</h3>
+
+            <div class="hidden-info">
+                <h4>{{ title }}<br>{{ year }}</h4>
+                <p>{{ description | safe }}</p>
+
+                {% if video_url %}
+                    <iframe src="{{ video_url }}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                {% endif %}
+            </div>
+
+            <div class="hidden-images">
+                {% for image in images %}
+                    <img src="{{ image }}">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
